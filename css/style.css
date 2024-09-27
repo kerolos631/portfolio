@@ -263,7 +263,51 @@ h4{
     border: 2px solid var(--primarycolor);
 }
 
+.projects{
+    background-color: var(--bgcolor-1);
+    padding:2rem var(--padding) ;
+    text-align: center;
 
+}
+.projects .boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 20px;
+    
+    
+}
+.projects .boxes img{
+    width: 300px;
+    height: 200px;
+    border-radius: 35px;
+    
+}
+.projects .boxes .box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 0 0 var(--primarycolor);
+    margin-right: 10px;
+    background-color: var(--bgcolor-2);
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+    padding: 30px;
+}
+.projects .boxes .box-content:hover{
+ transform: translateY(10px);
+}
+
+.projects .boxes .box-content p{
+    padding:0px 10px;
+    margin: 15px;
+}
+.projects .boxes .box-content .btn{
+
+    margin-bottom: 30px;
+}
 
 
 
